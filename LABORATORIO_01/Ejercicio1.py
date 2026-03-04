@@ -1,23 +1,27 @@
 import time
 
+# Clase Cronometro
 class Cronometro:
 
+    # Constructor
     def __init__(self):
-        self.__inicia = time.time()
-        self.__finaliza = 0
+        # guarda tiempo inicial
+        self.__inicio = 0
 
-    def getInicia(self):
-        return self.__inicia
+        # guarda tiempo final
+        self.__fin = 0
 
-    def getFinaliza(self):
-        return self.__finaliza
 
+    # inicia medición del tiempo
     def inicia(self):
-        self.__inicia = time.time()
+        self.__inicio = time.time()
 
+
+    # detiene medición
     def detener(self):
-        self.__finaliza = time.time()
+        self.__fin = time.time()
 
+
+    # calcula tiempo transcurrido
     def lapsoDeTiempo(self):
-        tiempo = self.__finaliza - self.__inicia
-        return tiempo * 1000
+        return (self.__fin - self.__inicio) * 1000
