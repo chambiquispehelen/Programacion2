@@ -1,4 +1,4 @@
-from EcuacionCuadratica import EcuacionCuadratica
+from Ejercicio3 import EcuacionCuadratica
 
 # entrada de datos
 a = float(input("Ingrese a: "))

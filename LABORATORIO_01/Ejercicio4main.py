@@ -1,6 +1,7 @@
 from Ejercicio4 import Estadistica
 
 datos = []
+
 print("Ingrese 10 números:")
 
 for i in range(10):
