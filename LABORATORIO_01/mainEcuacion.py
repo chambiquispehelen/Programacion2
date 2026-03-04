@@ -9,7 +9,7 @@ f = float(input("Ingrese f: "))
 
 ecua = EcuacionLineal(a, b, c, d, e, f)
 
-if ecua.tieneSolucion():
+if ecua.tienSolucion():
     print("x =", ecua.getX())
     print("y =", ecua.getY())
 else:
