@@ -1,4 +1,4 @@
-from EcuacionLineal import EcuacionLineal
+from Ejercicio2 import EcuacionLineal
 
 a = float(input("Ingrese a: "))
 b = float(input("Ingrese b: "))
