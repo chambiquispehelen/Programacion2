@@ -10,9 +10,9 @@ class EcuacionLineal:
         self.__f = f
     # c) Método que verifica si tiene solución
     def tieneSolucion(self):
-        determinante = self.__a * self.__d - self.__b * self.__c
+        determ = self.__a * self.__d - self.__b * self.__c
 
-        if determinante != 0:
+        if determ != 0:
             return True
         else:
             return False
