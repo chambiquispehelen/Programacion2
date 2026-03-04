@@ -21,7 +21,7 @@ for i in range(n):
 
     minimo = i
 
-    for j in range(i + 1, n):
+    for j in range(i+1, n):
 
         if numeros[j] < numeros[minimo]:
             minimo = j
@@ -34,4 +34,6 @@ for i in range(n):
 crono.detener()
 
 # mostrar tiempo
-print("Tiempo de ejecución:", crono.lapsoDeTiempo(), "milisegundos")
+print("Tiempo de ejecución:",
+      crono.lapsoDeTiempo(),
+      "milisegundos")
