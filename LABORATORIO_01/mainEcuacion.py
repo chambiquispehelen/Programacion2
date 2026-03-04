@@ -1,26 +1,16 @@
-from EcuacionCuadratica import EcuacionCuadratica
+from EcuacionLineal import EcuacionLineal
 
 a = float(input("Ingrese a: "))
 b = float(input("Ingrese b: "))
 c = float(input("Ingrese c: "))
+d = float(input("Ingrese d: "))
+e = float(input("Ingrese e: "))
+f = float(input("Ingrese f: "))
 
-# validar ecuación cuadrática
-if a == 0:
-    print("No es una ecuación cuadrática")
+ecua = EcuacionLineal(a, b, c, d, e, f)
+
+if ecua.tieneSolucion():
+    print("x =", ecua.getX())
+    print("y =", ecua.getY())
 else:
-    ecuacion = EcuacionCuadratica(a, b, c)
-
-    d = ecuacion.getDiscriminante()
-
-    if d > 0:
-        print("La ecuación tiene dos raíces",
-              f"{ecuacion.getRaiz1():.6f}",
-              "y",
-              f"{ecuacion.getRaiz2():.6f}")
-
-    elif d == 0:
-        print("La ecuación tiene una raíz",
-              f"{ecuacion.getRaiz1():.6f}")
-
-    else:
-        print("La ecuación no tiene raíces reales")
+    print("La ecuación no tiene solución")
